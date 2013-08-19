@@ -1,0 +1,14 @@
+#!/bin/bash
+# pandoc -N --template=mytemplate.tex --variable mainfont=Georgia --variable sansfont=Arial --variable monofont="Bitstream Vera Sans Mono" --variable fontsize=12pt --variable version=1.10 README --latex-engine=xelatex --toc -o example14.pdf
+pandoc -N \
+    -t latex \
+    --latex-engine=xelatex \
+    --template=courtdoc.cls.tex \
+    --variable=court:"In the Federal Court of Australia \\\ Western Australia district registry \\\ General Division" \
+    --variable=fileno:"WAD 005 of 2013" \
+    --variable=subtitle:"(Junior Counsel)" \
+    --variable=party1-name:"Friends of the North West Inc" \
+    --variable=party1-title:"Applicant" \
+    --variable=party2-name:"Minister for the Environment, Heritage and Water" \
+    --variable=party2-title:"Respondent" \
+    $1.md > $1.tex && xelatex $1.tex

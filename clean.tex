@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\setlength{\parindent}{0pt}
+\usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\geometry{a4paper}
+
+\usepackage{fancyhdr, graphicx, enumerate}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\bfseries}
+{\thesection}{1em}{}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont
+    [Mapping=tex-text, Ligatures={Common}]
+    {Linux Libertine O}
+
+\newcommand{\court}[1]
+    {\parbox[t]{12cm}{\uppercase{#1}}}
+\newcommand{\fileno}[1]
+    {\parbox[t]{3cm}{\raggedleft{#1}}\\[18pt]}
+\newcommand{\party}[2]
+    { \court{\textbf{#1}}
+      \fileno{#2} }
+\newcommand{\tram}[2]{
+    \vspace{-24pt}
+    \hrulefill
+    \vspace{6pt}
+    \begin{center}
+        #1
+    \end{center}
+    \hrulefill
+}
+\newcommand{\heading}[1]{
+    \textbf{#1}
+}
+\newcommand{\citn}[2]{
+    \vspace{6pt}
+    \emph{#1} #2.
+}
+\newcommand{\para}[2]{
+    \begin{quote}
+    [\textbf{#1}] #2
+    \end{quote}
+}
+
+% List formatting
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\newcommand{\enum}[1]{
+    \begin{enumerate}[leftmargin=1cm, align=left, resume]
+        #1
+    \end{enumerate}
+}
+\newcommand{\enumnew}[1]{
+    \begin{enumerate}[leftmargin=1cm, align=left]
+        #1
+    \end{enumerate}
+}
+
+
+\fancyhf{}
+\fancyhead[LE,RO]{\vspace{1cm}\thepage} % Left side on Even pages; Right side on Odd pages
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\court{In the Federal Court of Australia \\ Western Australia district registry \\ General Division}
+\fileno{WAD 005 of 2013}
+BETWEEN: \\[18pt]
+\party{Friends of the North West Inc}{Applicant}
+\party{Minister for the Environment, Heritage and Water}{Respondent}
+
+\tram{
+    \uppercase{\textbf{
+        Respondent's outline of submissions
+    }}
+            \\ (Junior Counsel) \\
+    }
+
+\section{Statement of facts}
+
+\section{Submission 1: The Minister did not make the Decision according
+to a rule or policy without regard to the merits of the particular
+case.}
+
+\begin{enumerate}[1.]
+\item
+  A lawful policy is normally a relevant consideration which a
+  decision-maker is bound to take into account.
+\item
+  In Drake, the Court said:
+
+  \begin{quote}
+  The propriety of paying regard to general policy considerations is
+  most evident in a case such as the present where there are no speciﬁed
+  statutory criteria for the exercise of the discretionary power and
+  where the power is entrusted to a Minister of the Crown responsible to
+  Parliament.
+  \end{quote}
+\end{enumerate}
+
+\section{Submission 2: The Minister's refusal to delay the decision was
+reasonable in the circumstances.}
+
+\begin{enumerate}[1.]
+\item
+  Wednesbury unreasonableness
+\end{enumerate}
+
+\end{document}
