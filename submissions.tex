@@ -1,0 +1,205 @@
+\documentclass[12pt]{article}
+\setlength{\parindent}{0pt}
+\usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\geometry{a4paper}
+
+\usepackage{fancyhdr}
+
+\usepackage{titlesec}
+\titleformat{\section}
+    {\normalfont\bfseries}
+    {\thesection}{1em}{}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont
+    [Mapping=tex-text, Ligatures={Common}]
+    {Linux Libertine O}
+
+
+\newcommand{\court}[1]
+    {\parbox[t]{12cm}{\uppercase{#1}}}
+\newcommand{\fileno}[1]
+    {\parbox[t]{3cm}{\raggedleft{#1}}\\[18pt]}
+\newcommand{\party}[2]
+    { \court{\textbf{#1}}
+      \fileno{#2} }
+\newcommand{\tram}[2]{
+    \vspace{-24pt}
+    \hrulefill
+    \vspace{6pt}
+    \begin{center}
+        #1
+    \end{center}
+    \hrulefill
+}
+\newcommand{\heading}[1]{
+    \textbf{#1}
+}
+\newcommand{\citn}[2]{
+    \vspace{6pt}
+    \emph{#1} #2.
+}
+\newcommand{\para}[2]{
+    \begin{quote}
+    [\textbf{#1}] #2
+    \end{quote}
+}
+
+% header and footer
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[LE,RO]{\vspace{1cm}\thepage} % Left side on Even pages; Right side on Odd pages
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+% no section numbering
+\renewcommand{\thesection}{\hspace{-1em}}
+
+% lists
+\usepackage[shortlabels]{enumitem}
+\setlist{leftmargin=1cm, align=left}
+\setlist[enumerate]{label*=\arabic*.}
+
+\begin{document}
+
+% no first page number
+\pagestyle{empty}
+
+\court{In the Federal Court of Australia \\ Western Australia district registry \\ General Division}
+\fileno{WAD 005 of 2013}
+BETWEEN: \\[18pt]
+\party{Friends of the North West Inc}{Applicant}
+and \\[18pt]
+\party{Minister for the Environment, Heritage and Water}{Respondent}
+
+\tram{
+    \uppercase{\textbf{
+        Respondent's outline of submissions
+    }}
+            \\ (Junior Counsel) \\
+    }
+
+\section{Statement of facts}
+
+\begin{enumerate}[1.]
+\item
+  Petro Energy Pty Ltd proposes to build and operate a floating LNG
+  plant to process gas in the Selinka Gas Field, approximately 150 km
+  off the coast of WA (\textbf{Proposal}).
+\item
+  The \emph{Environment Protection and Biodiversity Conservation Act
+  1999} (Cth) (\textbf{\emph{EPBC Act}})
+\item
+  On 30 July 2013, the Minister approved the proposal
+  (\textbf{Decision}). e Minister's reasons for the Decision
+  (\textbf{Reasons}) stated that:
+
+  \begin{enumerate}
+  \item
+    in deciding to approve the taking of the action, the Minister had
+    given strong consideration to a recent Commonwealth government
+    policy announcement that it would `streamline' environmental
+    approval of offshore gas projects and `cut environmental green tape'
+    in order to ensure that the Australia offshore gas industry remained
+    competitive and attractive to international investment;
+  \item
+    he had not delayed the decision in response to FNW's letter, as he
+    considered that adequate time had been given for public comment in
+    compliance with the provisions of the EPBC Act.
+  \end{enumerate}
+\end{enumerate}
+
+\section{Submission 1: The Minister did not make the Decision according
+to a rule or policy without regard to the merits of the particular
+case.}
+
+\begin{enumerate}[1.]
+\item
+  The Minister's Reasons disclose only that the Minister ``gave strong
+  consideration'' to the policy. The Minister had regard to the merits
+  of the
+\item
+  A lawful policy is normally a relevant consideration which a
+  decision-maker is bound to take into account.
+\item
+  In the absence of any statutory or contextual indication of the weight
+  to be given to factors to which a decision-maker must have regard, it
+  is generally for him or her to determine the appropriate weight to be
+  given to them.
+
+  \emph{Minister for Aboriginal Affairs v Peko-Wallsend Ltd} {[}1986{]}
+  HCA 40; \\(1986) 162 CLR 24, 41 (Mason J).
+\item
+  In Drake, the Court said:
+\end{enumerate}
+
+\begin{quote}
+The propriety of paying regard to general policy considerations is most
+evident in a case such as the present where there are no speciﬁed
+statutory criteria for the exercise of the discretionary power and where
+the power is entrusted to a Minister of the Crown responsible to
+Parliament.
+\end{quote}
+
+\section{Submission 2: The Minister's refusal to delay the Decision was
+reasonable in the circumstances.}
+
+\begin{enumerate}[1.]
+\item
+  Section 5(2)(g) of the \emph{ADJR Act} provides that the improper
+  exercise of a power includes ``an exercise of a power that is so
+  unreasonable that no reasonable person could have so exercised the
+  power.'' This provision incorporates the common law notion of
+  `\emph{Wednesbury} unreasonableness.'
+
+  \emph{Associated Provincial Picture Houses Ltd v Wednesbury
+  Corporation} {[}1948{]} 1 KB 223, \\ 230 (Lord Green MR).
+
+  \emph{Minister for Aboriginal Affairs v Peko-Wallsend Ltd} {[}1986{]}
+  HCA 40; \\(1986) 162 CLR 24, 41 (Mason J).
+\item
+  The High Court considered \emph{Wednesbury} unreasonableness in
+  \emph{Li}, affirming decisions at first instance and on appeal to the
+  Full Court which upheld this ground of review.
+\item
+  This Court recently considered an application for judicial review of a
+  Ministerial decision under the \emph{EPBC Act} in \emph{Tarkine
+  National Coalition}. Although the application was successful, the
+  Court rejected the ground of review alleging \emph{Wednesbury}
+  unreasonableness, noting Gageler J's observation.
+
+  \begin{quote}
+  The above response is a persuasive one, at least in the latter two
+  points. It is difficult to see how the decision could be characterised
+  as irrational or so unreasonable that no decision-maker would make it.
+  As Gageler J said in Li at {[}113{]} ``judicial determination of
+  Wednesbury unreasonableness in Australia has in practice been rare.
+  Nothing in these reasons should be taken as encouragement to greater
+  frequency. This is a rare case''.
+  \end{quote}
+\item
+  In \emph{Li}, the applicant sought judicial review of the Migration
+  Review Tribunal's refusal to delay its decision on a visa application
+  until the applicant could put certain evidence before the Tribunal.
+  The decision was held to be ``unreasonable in the \emph{Wednesbury
+  Corporation} sense'' at first instance, on appeal to the Full Court of
+  the Federal Court, and on appeal to the High Court. Gageler J said:
+
+  \begin{quote}
+  Judicial determination of Wednesbury unreasonableness in Australia has
+  in practice been rare. Nothing in these reasons should be taken as
+  encouragement to greater frequency. This is a rare case.
+  \end{quote}
+
+  \emph{Minister for Immigration and Citizenship v Li} {[}2013{]} HCA
+  18, {[}113{]} (Gageler J).
+\item
+  In contrast to the refusal in \emph{Li}, the Minister's refusal to
+  defer the Decision was not `fatal' to the applicant's interests.
+
+  \emph{Minister for Immigration and Citizenship v Li} {[}2013{]} HCA
+  18, {[}31{]} (French CJ).
+\end{enumerate}
+
+\end{document}

@@ -3,7 +3,7 @@
 pandoc -N \
     -t latex \
     --latex-engine=xelatex \
-    --template=courtdoc.cls.tex \
+    --template=courtdoc.template.tex \
     --variable=court:"In the Federal Court of Australia \\\ Western Australia district registry \\\ General Division" \
     --variable=fileno:"WAD 005 of 2013" \
     --variable=subtitle:"(Junior Counsel)" \

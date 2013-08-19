@@ -3,18 +3,19 @@
 \usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
 \geometry{a4paper}
 
-\usepackage{fancyhdr, graphicx, enumerate}
+\usepackage{fancyhdr}
 
 \usepackage{titlesec}
 \titleformat{\section}
-{\normalfont\bfseries}
-{\thesection}{1em}{}
+    {\normalfont\bfseries}
+    {\thesection}{1em}{}
 
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont
     [Mapping=tex-text, Ligatures={Common}]
     {Linux Libertine O}
+
 
 \newcommand{\court}[1]
     {\parbox[t]{12cm}{\uppercase{#1}}}
@@ -45,27 +46,24 @@
     \end{quote}
 }
 
-% List formatting
-\renewcommand{\labelenumi}{\arabic{enumi}.}
-\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
-\newcommand{\enum}[1]{
-    \begin{enumerate}[leftmargin=1cm, align=left, resume]
-        #1
-    \end{enumerate}
-}
-\newcommand{\enumnew}[1]{
-    \begin{enumerate}[leftmargin=1cm, align=left]
-        #1
-    \end{enumerate}
-}
-
-
+% header and footer
+\usepackage{fancyhdr}
 \fancyhf{}
 \fancyhead[LE,RO]{\vspace{1cm}\thepage} % Left side on Even pages; Right side on Odd pages
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 
+% no section numbering
+\renewcommand{\thesection}{\hspace{-1em}}
+
+% lists
+\usepackage[shortlabels]{enumitem}
+\setlist{leftmargin=1cm, align=left}
+\setlist[enumerate]{label*=\arabic*.}
+
 \begin{document}
+
+% no first page number
 \pagestyle{empty}
 
 \court{$court$}
@@ -74,6 +72,7 @@ BETWEEN: \\[18pt]
 $if(party1-name)$
 \party{$party1-name$}{$party1-title$}
 $endif$
+and \\[18pt]
 $if(party2-name)$
 \party{$party2-name$}{$party2-title$}
 $endif$
