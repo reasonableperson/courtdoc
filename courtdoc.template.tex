@@ -3,8 +3,6 @@
 \usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
 \geometry{a4paper}
 
-\usepackage{fancyhdr}
-
 \usepackage{titlesec}
 \titleformat{\section}
     {\normalfont\bfseries}
@@ -15,7 +13,6 @@
 \setromanfont
     [Mapping=tex-text, Ligatures={Common}]
     {Linux Libertine O}
-
 
 \newcommand{\court}[1]
     {\parbox[t]{12cm}{\uppercase{#1}}}
@@ -46,24 +43,18 @@
     \end{quote}
 }
 
-% header and footer
-\usepackage{fancyhdr}
-\fancyhf{}
-\fancyhead[LE,RO]{\vspace{1cm}\thepage} % Left side on Even pages; Right side on Odd pages
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
 
 % no section numbering
 \renewcommand{\thesection}{\hspace{-1em}}
 
 % lists
 \usepackage[shortlabels]{enumitem}
-\setlist{leftmargin=1cm, align=left}
+\setlist{leftmargin=1cm, align=left, resume}
 \setlist[enumerate]{label*=\arabic*.}
 
 \begin{document}
 
-% no first page number
+% no page numbers
 \pagestyle{empty}
 
 \court{$court$}
