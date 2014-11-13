@@ -68,7 +68,7 @@
 
 2.  A decision-maker is normally entitled to treat government policy as a relevant
     consideration in the absence of statutory provision to the contrary. The propriety
-    of paying regard to policy considerations is particular evidence where the power
+    of paying regard to policy considerations is particularly evident where the power
     is entrusted to a Minister of the Crown responsible to Parliament.
 
     _Drake v Minister for Immigration and Ethnic Affairs_ (1979) 46 FLR 409, 420 \
