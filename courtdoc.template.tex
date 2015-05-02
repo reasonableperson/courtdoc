@@ -3,7 +3,14 @@
 \usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
 \geometry{a4paper}
 
+\usepackage{pbox}
+\usepackage{hyperref}
 \usepackage{ctable} % pandoc markdown+yaml
+
+\usepackage{fontspec}
+\newfontfamily{\icon}{FontAwesome}
+\def\email{{\icon \symbol{"F003}\hspace{0.5em}}}
+\def\phone{{\icon \symbol{"F095}\hspace{0.75em}}}
 
 \usepackage{titlesec}
 \titleformat{\section}
@@ -16,22 +23,6 @@
     [Mapping=tex-text, Ligatures={Common}]
     {Linux Libertine O}
 
-\newcommand{\court}[1]
-    {\parbox[t]{12cm}{\uppercase{#1}}}
-\newcommand{\fileno}[1]
-    {\parbox[t]{3cm}{\raggedleft{#1}}\\[18pt]}
-\newcommand{\party}[2]
-    { \court{\textbf{#1}}
-      \fileno{#2} }
-\newcommand{\tram}[2]{
-    \vspace{-24pt}
-    \hrulefill
-    \vspace{6pt}
-    \begin{center}
-        #1
-    \end{center}
-    \hrulefill \\
-}
 \newcommand{\heading}[1]{
     \textbf{#1}
 }
@@ -57,43 +48,54 @@
 \begin{document}
 
 % no page numbers
-\pagestyle{empty}
+% \pagestyle{empty}
 
-\court{$jurisdiction$$if(courtlist)$ \\ $courtlist$ $endif$}
-\fileno{$fileno$}
-BETWEEN: \\[18pt]
-$if(party1-name)$
-\party{$party1-name$}{$party1-title$}
-$endif$
-and \\[18pt]
-$if(party2-name)$
-\party{$party2-name$}{$party2-title$}
-$endif$
+\begin{tabularx}{\textwidth}{X r}
+\uppercase{$jurisdiction$$if(courtlist)$\\$courtlist$$endif$}
+& $fileno$\\[12pt]
+between \\[12pt]
+$for(parties)$
+$for(parties)$
+\uppercase{\textbf{$parties.name$}} & $parties.title$\\[12pt]
+$endfor$
+$sep$ and \\[12pt]
+$endfor$
+\end{tabularx}
 
-\tram{
-    \uppercase{\textbf{
-        $title$
-    }}
-    $if(subtitle)$
-        \\ $subtitle$ \\
-    $endif$}
+\hrulefill
+\vspace{6pt}
+\begin{center}
+    \uppercase{\textbf{$title$}}
+\end{center}
+\hrulefill \\
+\vspace{-12pt}
 
 \begin{center}
 \begin{tabular}{l l}
-Date of document:   & 1 May 2015 \\[6pt]
-Date of filing:     & \hspace{1em} May 2015 \\[6pt]
-Filed on behalf of: & Respondent \\[6pt]
+Date of document:   & $document_date$ \\[6pt]
+Date of filing:     & $filing_date$ \\[6pt]
+Filed on behalf of: & $client$ \\[6pt]
 Prepared by:        & \\[6pt]
-\hspace{6pt}
-Scott Young         & p: 0417 184 177\\
-\hspace{6pt}
-Lawyer              & e: scott@sjy.id.au\\
-\hspace{6pt}
-Perth, Western Australia & \\[6pt]
+\hspace{1em}\pbox{10cm}{
+    $for(prepared_by)$
+    \small{$prepared_by$}\\
+    $endfor$} & 
+\pbox{10cm}{
+    $for(contact)$
+    \small{$contact$}\\
+    $endfor$}\\[6pt]
 \hline
 \end{tabular}
 \end{center}
 
 $body$
+
+$if(signoff)$
+\raggedleft
+\vfill
+$signoff$
+\vspace{48pt}
+$signature$
+$endif$
 
 \end{document}

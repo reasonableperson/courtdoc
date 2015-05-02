@@ -1,0 +1,25 @@
+---
+jurisdiction: Supreme Court of Western Australia
+courtlist: Commercial and Managed Cases List
+fileno: CIV 1 of 2015
+parties:
+  -
+    -
+      name: Edward Gough Whitlam
+      title: Plaintiff
+  -
+    - 
+      name: Garfield Edward John Barwick
+      title: First Defendant
+    - name: The High Court of Australia
+      title: Second Defendant
+client: Plaintiff
+prepared_by:
+  - \textsc{Wachtell, Lipton, Rosen \& Katz}
+  - 1000 Money Street
+  - Perth, Western Australia
+contact:
+  - Scott Young, Partner
+  - \phone 0417 184 177
+  - \email scott@sjy.id.au
+...
