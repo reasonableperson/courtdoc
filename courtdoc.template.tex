@@ -45,6 +45,11 @@
 \setlist{leftmargin=1cm, align=left, resume}
 \setlist[enumerate]{label*=\arabic*.}
 
+% page numbers
+% \usepackage{fancyhdr}
+% \pagestyle{myheadings}
+\pagestyle{empty}
+
 \begin{document}
 
 % no page numbers
@@ -65,7 +70,10 @@ $endfor$
 \hrulefill
 \vspace{6pt}
 \begin{center}
+    $for(title)$
     \uppercase{\textbf{$title$}}
+    $sep$ \\
+    $endfor$
 \end{center}
 \hrulefill \\
 \vspace{-12pt}
@@ -86,7 +94,7 @@ Prepared by:        & \\[6pt]
     $for(contact)$
     \small{$contact$}\\
     $endfor$}\\[12pt]
-\hline
+\hline\\[12pt]
 \end{tabular}
 \end{center}
 
