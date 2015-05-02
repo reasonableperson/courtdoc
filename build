@@ -4,8 +4,8 @@ pandoc -N \
     -t latex \
     --latex-engine=xelatex \
     --template=courtdoc.template.tex \
-    --variable=court:"In the Federal Court of Australia \\\ Western Australia district registry \\\ General Division" \
-    --variable=fileno:"WAD 005 of 2013" \
+    --variable=court:"In the Federal Court of Australia \\\ Western Australia district registry" \
+    --variable=fileno:"WAD 5 of 2013" \
     --variable=subtitle:"(Junior Counsel)" \
     --variable=party1-name:"Friends of the North West Inc" \
     --variable=party1-title:"Applicant" \

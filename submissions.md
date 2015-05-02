@@ -112,7 +112,7 @@
     '_Wednesbury_ unreasonableness.'
 
     _Associated Provincial Picture Houses Ltd v Wednesbury Corporation_ [1948] 1 KB 223, \
-     230 (Lord Green MR).
+     230 (Lord Greene MR).
 
     _Minister for Aboriginal Affairs v Peko-Wallsend Ltd_ [1986] HCA 40; \
     (1986) 162 CLR 24, 41 (Mason J).
@@ -139,7 +139,7 @@
     to delay directly affected the Tribunal's ultimate decision. The delay was sought pending
     the review of a 'skills assessment' which was unfavourable to the applicant. Ultimately,
     the review resulted in an assessment favouring the applicant. The Tribunal relied on the
-    erroneous skills assessment in deciding the refuse the applicant a visa. In contrast,
+    erroneous skills assessment in deciding to refuse the applicant a visa. In contrast,
     the Delay Request in this case was for the purpose of providing further information which
     the Minister might have regard to, not for the purpose of correcting information which
     the Minister was required to rely on.
@@ -165,7 +165,7 @@
     Environment, Water, Population and Communities_ [2013] FCA 694, [85] (Marshall J).
 
     _Associated Provincial Picture Houses Ltd v Wednesbury Corporation_ [1948] 1 KB 223, \
-     230 (Lord Green MR).
+     230 (Lord Greene MR).
 
 \raggedleft
 \vfill
