@@ -1,7 +1,7 @@
 #!/bin/bash
 ~/.cabal/bin/pandoc \
     -t latex \
-    -f markdown+yaml_metadata_block+citations \
+    -f markdown+yaml_metadata_block+citations+footnotes \
     --latex-engine xelatex \
     --filter ~/.cabal/bin/pandoc-citeproc \
     --csl=aglc.csl \

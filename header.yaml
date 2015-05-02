@@ -5,21 +5,21 @@ fileno: CIV 1 of 2015
 parties:
   -
     -
-      name: Edward Gough Whitlam
+      name: Bugs Bunny
       title: Plaintiff
   -
     - 
-      name: Garfield Edward John Barwick
+      name: Daffy Duck
       title: First Defendant
-    - name: The High Court of Australia
+    - name: Anatine Enterprises Pty Ltd
       title: Second Defendant
 client: Plaintiff
 prepared_by:
-  - \textsc{Wachtell, Lipton, Rosen \& Katz}
+  - \textsc{Babe Zone}
   - 1000 Money Street
   - Perth, Western Australia
 contact:
-  - Scott Young, Partner
+  - Scott Young
   - \phone 0417 184 177
   - \email scott@sjy.id.au
 ...

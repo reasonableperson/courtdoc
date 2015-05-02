@@ -70,6 +70,8 @@ $endfor$
 \hrulefill \\
 \vspace{-12pt}
 
+\setlength{\tabcolsep}{1em}
+
 \begin{center}
 \begin{tabular}{l l}
 Date of document:   & $document_date$ \\[6pt]
@@ -83,7 +85,7 @@ Prepared by:        & \\[6pt]
 \pbox{10cm}{
     $for(contact)$
     \small{$contact$}\\
-    $endfor$}\\[6pt]
+    $endfor$}\\[12pt]
 \hline
 \end{tabular}
 \end{center}
@@ -93,7 +95,7 @@ $body$
 $if(signoff)$
 \raggedleft
 \vfill
-$signoff$
+$signoff$\\
 \vspace{48pt}
 $signature$
 $endif$
