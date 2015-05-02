@@ -28,7 +28,7 @@
     \begin{center}
         #1
     \end{center}
-    \hrulefill
+    \hrulefill \\
 }
 \newcommand{\heading}[1]{
     \textbf{#1}
@@ -58,7 +58,7 @@
 \pagestyle{empty}
 
 \court{$court$}
-\fileno{WAD 005 of 2013}
+\fileno{$fileno$}
 BETWEEN: \\[18pt]
 $if(party1-name)$
 \party{$party1-name$}{$party1-title$}
@@ -74,8 +74,23 @@ $endif$
     }}
     $if(subtitle)$
         \\ $subtitle$ \\
-    $endif$
-}
+    $endif$}
+
+\begin{center}
+\begin{tabular}{l l}
+Date of document:   & 1 May 2015 \\[6pt]
+Date of filing:     & \hspace{1em} May 2015 \\[6pt]
+Filed on behalf of: & Respondent \\[6pt]
+Prepared by:        & \\[6pt]
+\hspace{6pt}
+Scott Young         & p: 0417 184 177\\
+\hspace{6pt}
+Lawyer              & e: scott@sjy.id.au\\
+\hspace{6pt}
+Perth, Western Australia & \\[6pt]
+\hline
+\end{tabular}
+\end{center}
 
 $body$
 
