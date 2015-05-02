@@ -5,8 +5,6 @@ fileno: CIV 1 of 2015
 
 ---
 
-% Respondent's outline of submissions
-
 # Statement of facts
 
 1.  Petro Energy Pty Ltd proposes to build and operate a floating LNG plant to

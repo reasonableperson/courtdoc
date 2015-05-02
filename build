@@ -4,7 +4,7 @@ pandoc -N \
     -t latex \
     --latex-engine=xelatex \
     --template=courtdoc.template.tex \
-    --variable=subtitle:"(Junior Counsel)" \
+    --variable=title:"Court document" \
     --variable=party1-name:"Friends of the North West Inc" \
     --variable=party1-title:"Applicant" \
     --variable=party2-name:"Minister for the Environment, Heritage and Water" \

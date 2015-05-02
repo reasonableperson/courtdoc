@@ -3,6 +3,8 @@
 \usepackage[top=2cm, bottom=3cm, left=3cm, right=3cm]{geometry}
 \geometry{a4paper}
 
+\usepackage{ctable} % pandoc markdown+yaml
+
 \usepackage{titlesec}
 \titleformat{\section}
     {\normalfont\bfseries}
@@ -28,7 +30,7 @@
     \begin{center}
         #1
     \end{center}
-    \hrulefill
+    \hrulefill \\
 }
 \newcommand{\heading}[1]{
     \textbf{#1}
@@ -57,8 +59,8 @@
 % no page numbers
 \pagestyle{empty}
 
-\court{In the Federal Court of Australia \\ Western Australia district registry \\ General Division}
-\fileno{WAD 005 of 2013}
+\court{}
+\fileno{}
 BETWEEN: \\[18pt]
 \party{Friends of the North West Inc}{Applicant}
 and \\[18pt]
@@ -66,10 +68,37 @@ and \\[18pt]
 
 \tram{
     \uppercase{\textbf{
-        Respondent's outline of submissions
+        Court document
     }}
-            \\ (Junior Counsel) \\
     }
+
+\begin{center}
+\begin{tabular}{l l}
+Date of document:   & 1 May 2015 \\[6pt]
+Date of filing:     & \hspace{1em} May 2015 \\[6pt]
+Filed on behalf of: & Respondent \\[6pt]
+Prepared by:        & \\[6pt]
+\hspace{6pt}
+Scott Young         & p: 0417 184 177\\
+\hspace{6pt}
+Lawyer              & e: scott@sjy.id.au\\
+\hspace{6pt}
+Perth, Western Australia & \\[6pt]
+\hline
+\end{tabular}
+\end{center}
+
+\ctable[pos = H, center, botcap]{l}
+{% notes
+}
+{% rows
+\FL
+\parbox[t]{0.04\columnwidth}{\raggedright
+jurisdiction: Supreme Court of Western Australia courtlist: Commercial
+and Managed Cases List fileno: CIV 1 of 2015
+}
+\LL
+}
 
 \section{Statement of facts}
 
@@ -232,7 +261,7 @@ not an improper exercise of power within the meaning of s 5(2)(g) of the
   common law notion of `\emph{Wednesbury} unreasonableness.'
 
   \emph{Associated Provincial Picture Houses Ltd v Wednesbury
-  Corporation} {[}1948{]} 1 KB 223, \\ 230 (Lord Green MR).
+  Corporation} {[}1948{]} 1 KB 223, \\ 230 (Lord Greene MR).
 
   \emph{Minister for Aboriginal Affairs v Peko-Wallsend Ltd} {[}1986{]}
   HCA 40; \\(1986) 162 CLR 24, 41 (Mason J).
@@ -267,7 +296,7 @@ not an improper exercise of power within the meaning of s 5(2)(g) of the
   `skills assessment' which was unfavourable to the applicant.
   Ultimately, the review resulted in an assessment favouring the
   applicant. The Tribunal relied on the erroneous skills assessment in
-  deciding the refuse the applicant a visa. In contrast, the Delay
+  deciding to refuse the applicant a visa. In contrast, the Delay
   Request in this case was for the purpose of providing further
   information which the Minister might have regard to, not for the
   purpose of correcting information which the Minister was required to
@@ -298,7 +327,7 @@ not an improper exercise of power within the meaning of s 5(2)(g) of the
   {[}2013{]} FCA 694, {[}85{]} (Marshall J).
 
   \emph{Associated Provincial Picture Houses Ltd v Wednesbury
-  Corporation} {[}1948{]} 1 KB 223, \\ 230 (Lord Green MR).
+  Corporation} {[}1948{]} 1 KB 223, \\ 230 (Lord Greene MR).
 \end{enumerate}
 
 \raggedleft
