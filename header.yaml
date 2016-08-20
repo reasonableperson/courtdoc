@@ -1,6 +1,6 @@
 ---
-jurisdiction: Supreme Court of Western Australia
-courtlist: Commercial and Managed Cases List
+jurisdiction: In The Supreme Court of Oceania
+# courtlist: Commercial and Managed Cases List
 fileno: CIV 1 of 2015
 parties:
   -
@@ -15,11 +15,11 @@ parties:
       title: Second Defendant
 client: Plaintiff
 prepared_by:
-  - \textsc{Babe Zone}
+  - \textsc{\LaTeX{} Lawyers}
   - 1000 Money Street
   - Perth, Western Australia
 contact:
   - Scott Young
-  - \phone 0417 184 177
-  - \email scott@sjy.id.au
+  - \phone 0499 999 999
+  - \email scott@latexlawyers.com
 ...
