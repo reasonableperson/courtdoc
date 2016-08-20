@@ -6,4 +6,5 @@
     --filter ~/.cabal/bin/pandoc-citeproc \
     --csl=aglc.csl \
     --template=courtdoc.template.tex \
-    $1.md header.yaml > $1.tex && xelatex $1.tex
+    $1.md header.yaml > $1.tex && xelatex $1.tex && \
+    rm $1.log $1.tex $1.aux $1.out
